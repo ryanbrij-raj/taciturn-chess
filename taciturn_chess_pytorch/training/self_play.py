@@ -84,7 +84,7 @@ def play_one_game(model, device, iteration: int, game_num: int) -> tuple:
     outcome    = game.get_outcome()
     result_str = {1.0: "1-0", -1.0: "0-1", 0.0: "1/2-1/2"}.get(outcome, "*")
 
-    # Save PGN
+    # pgn saves
     save_pgn(game, iteration, game_num, result_str)
 
     return record.finalize(outcome), result_str

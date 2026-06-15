@@ -46,7 +46,7 @@ class MCTSNode:
         self.value_sum = 0.0
         self.is_expanded = False
 
-    # ─── Value estimates ────────────────────────────────────────────────
+    # value estimates
 
     @property
     def q_value(self) -> float:
@@ -64,7 +64,7 @@ class MCTSNode:
         u = c_puct * self.prior * math.sqrt(parent_visits) / (1 + self.visit_count)
         return self.q_value + u
 
-    # ─── Tree operations ────────────────────────────────────────────────
+    # tree operations
 
     def expand(self, policy_probs: np.ndarray):
         """
@@ -89,7 +89,7 @@ class MCTSNode:
             move_priors[move] = p
             total += p
 
-        # Normalize (in case policy didn't sum to 1 over legal moves)
+        # normalize (in case policy didn't sum to 1 over legal moves)
         if total > 0:
             for move in legal:
                 move_priors[move] /= total

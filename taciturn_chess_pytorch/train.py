@@ -122,7 +122,7 @@ def main(resume: bool = False):
         new_model.load_state_dict(copy.deepcopy(best_model.state_dict()))
         metrics = train_on_buffer(new_model, device, replay_buffer, iteration)
 
-        # 3. Evaluate
+        # 3. eval
         logger.info("[3/4] Evaluating new model vs best model...")
         eval_result = evaluate_models(new_model, best_model, device)
 

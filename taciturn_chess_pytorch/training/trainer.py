@@ -50,7 +50,7 @@ def train_on_buffer(model, device, replay_buffer, iteration: int) -> dict:
             # Value loss: MSE
             value_loss = F.mse_loss(pred_values.squeeze(1), values_t)
 
-            # Policy loss: cross-entropy
+            # policy loss: cross-entropy
             log_probs   = F.log_softmax(policy_logits, dim=1)
             policy_loss = -(policies_t * log_probs).sum(dim=1).mean()
 

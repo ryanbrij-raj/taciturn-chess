@@ -28,7 +28,7 @@ class ChessGame:
         g.move_history = list(self.move_history)
         return g
 
-    # ─── State accessors ────────────────────────────────────────────────
+    # state accessors
 
     @property
     def current_player(self) -> chess.Color:
@@ -45,7 +45,7 @@ class ChessGame:
     def get_legal_moves(self) -> list[chess.Move]:
         return list(self.board.legal_moves)
 
-    # ─── Game flow ──────────────────────────────────────────────────────
+    # game flow
 
     def apply_move(self, move: chess.Move):
         self.history.insert(0, self.board.copy())
@@ -81,7 +81,7 @@ class ChessGame:
         raw = self.get_outcome()
         return raw if color == chess.WHITE else -raw
 
-    # ─── Utilities ──────────────────────────────────────────────────────
+    # utilities
 
     def to_pgn(self) -> str:
         """Export the game to PGN format."""
