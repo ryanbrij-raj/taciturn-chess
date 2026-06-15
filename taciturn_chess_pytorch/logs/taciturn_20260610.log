@@ -1,0 +1,27 @@
+2026-06-10 20:28:50 [INFO] [taciturn.train] Using GPU: NVIDIA GeForce RTX 2060 (6.0 GB)
+2026-06-10 20:28:50 [INFO] [taciturn.train] Starting fresh training run.
+2026-06-10 20:28:50 [INFO] [taciturn.train] Model: 12,685,699 parameters
+2026-06-10 20:28:50 [INFO] [taciturn.checkpoint] Saved model → checkpoints/best_model.pt
+2026-06-10 20:28:50 [INFO] [taciturn.train] ============================================================
+2026-06-10 20:28:50 [INFO] [taciturn.train]   Taciturn Chess Engine — Self-Play Training (PyTorch)
+2026-06-10 20:28:50 [INFO] [taciturn.train] ============================================================
+2026-06-10 20:28:50 [INFO] [taciturn.train] 
+==================================================
+  ITERATION 1
+==================================================
+2026-06-10 20:28:50 [INFO] [taciturn.train] [1/4] Generating 100 self-play games...
+2026-06-10 20:28:50 [INFO] [taciturn.self_play] Starting self-play: 100 games, 400 sims/move
+2026-06-10 20:31:54 [INFO] [taciturn.train] Using GPU: NVIDIA GeForce RTX 2060 (6.0 GB)
+2026-06-10 20:31:54 [INFO] [taciturn.train] Starting fresh training run.
+2026-06-10 20:31:54 [INFO] [taciturn.train] Model: 12,685,699 parameters
+2026-06-10 20:31:54 [INFO] [taciturn.checkpoint] Saved model → checkpoints/best_model.pt
+2026-06-10 20:31:54 [INFO] [taciturn.train] ============================================================
+2026-06-10 20:31:54 [INFO] [taciturn.train]   Taciturn Chess Engine — Self-Play Training (PyTorch)
+2026-06-10 20:31:54 [INFO] [taciturn.train] ============================================================
+2026-06-10 20:31:54 [INFO] [taciturn.train] 
+==================================================
+  ITERATION 1
+==================================================
+2026-06-10 20:31:54 [INFO] [taciturn.train] [1/4] Generating 100 self-play games...
+2026-06-10 20:31:54 [INFO] [taciturn.self_play] Starting self-play: 100 games, 400 sims/move
+2026-06-10 20:31:54 [INFO] [taciturn.self_play] PGNs will be saved to: C:\Users\rnbri\Downloads\taciturn_chess_pytorch\taciturn_chess_pytorch\games/iter_0001.pgn

@@ -1,0 +1,19 @@
+# Taciturn Chess Engine — Requirements (PyTorch version)
+# Install with: pip install -r requirements.txt
+# Then install PyTorch separately:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+
+# Chess logic
+python-chess
+
+# Numerical computing
+numpy
+
+# Progress bars
+tqdm
+
+# Plotting training curves
+matplotlib
+
+# Data serialization
+h5py

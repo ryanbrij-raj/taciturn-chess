@@ -1,0 +1,80 @@
+2026-06-11 10:02:03 [INFO] [taciturn.train] Using GPU: NVIDIA GeForce RTX 2060 (6.0 GB)
+2026-06-11 10:02:03 [INFO] [taciturn.train] Resuming training...
+2026-06-11 10:02:03 [INFO] [taciturn.checkpoint] Loaded model ← checkpoints/best_model.pt
+2026-06-11 10:02:03 [INFO] [taciturn.replay_buffer] No existing buffer found, starting fresh.
+2026-06-11 10:02:03 [INFO] [taciturn.train] ============================================================
+2026-06-11 10:02:03 [INFO] [taciturn.train]   Taciturn Chess Engine — Self-Play Training (PyTorch)
+2026-06-11 10:02:03 [INFO] [taciturn.train] ============================================================
+2026-06-11 10:02:03 [INFO] [taciturn.train] 
+==================================================
+  ITERATION 1
+==================================================
+2026-06-11 10:02:03 [INFO] [taciturn.train] [1/4] Generating 25 self-play games...
+2026-06-11 10:02:03 [INFO] [taciturn.self_play] Starting self-play: 25 games, 100 sims/move
+2026-06-11 10:02:03 [INFO] [taciturn.self_play] PGNs will be saved to: C:\Users\rnbri\Downloads\taciturn_chess_pytorch\taciturn_chess_pytorch\games/iter_0001.pgn
+2026-06-11 14:08:50 [INFO] [taciturn.self_play] Self-play complete: 9409 examples | W=0 D=25 L=0
+2026-06-11 14:08:50 [INFO] [taciturn.replay_buffer] Buffer size: 9,409 / 500,000
+2026-06-11 14:08:50 [INFO] [taciturn.train] [2/4] Training new model...
+2026-06-11 14:08:50 [INFO] [taciturn.trainer] Learning rate: 0.001000
+2026-06-11 14:09:10 [INFO] [taciturn.trainer] Training: 5 epochs × 36 steps | buffer=9,409
+2026-06-11 14:09:13 [INFO] [taciturn.trainer]   Epoch 1/5 | avg_loss=8.5077
+2026-06-11 14:09:15 [INFO] [taciturn.trainer]   Epoch 2/5 | avg_loss=8.4055
+2026-06-11 14:09:17 [INFO] [taciturn.trainer]   Epoch 3/5 | avg_loss=8.3033
+2026-06-11 14:09:19 [INFO] [taciturn.trainer]   Epoch 4/5 | avg_loss=8.2023
+2026-06-11 14:09:21 [INFO] [taciturn.trainer]   Epoch 5/5 | avg_loss=8.1164
+2026-06-11 14:09:21 [INFO] [taciturn.trainer] Training done | total=8.3070 policy=8.3029 value=0.0041
+2026-06-11 14:09:21 [INFO] [taciturn.train] [3/4] Evaluating new model vs best model...
+2026-06-11 14:09:21 [INFO] [taciturn.evaluator] Evaluation: 40 games (20 each color)
+2026-06-11 15:22:20 [INFO] [taciturn.evaluator] Evaluation: new=0 draw=40 best=0 | win_rate=50.0% | ✗ rejected
+2026-06-11 15:22:20 [INFO] [taciturn.train] [4/4] ✗ New model rejected (win rate: 50.0%)
+2026-06-11 15:22:20 [INFO] [taciturn.checkpoint] Saved model → checkpoints\model_iter_0001.pt
+2026-06-11 15:22:21 [INFO] [taciturn.replay_buffer] Buffer saved → data\replay_buffer.pkl (9,409 examples)
+2026-06-11 15:22:34 [INFO] [taciturn.train] Training curve → logs\training_curve.png
+2026-06-11 15:22:34 [INFO] [taciturn.train] Iteration 1 complete.
+2026-06-11 15:22:34 [INFO] [taciturn.train] 
+==================================================
+  ITERATION 2
+==================================================
+2026-06-11 15:22:34 [INFO] [taciturn.train] [1/4] Generating 25 self-play games...
+2026-06-11 15:22:34 [INFO] [taciturn.self_play] Starting self-play: 25 games, 100 sims/move
+2026-06-11 15:22:34 [INFO] [taciturn.self_play] PGNs will be saved to: C:\Users\rnbri\Downloads\taciturn_chess_pytorch\taciturn_chess_pytorch\games/iter_0002.pgn
+2026-06-11 15:26:58 [INFO] [taciturn.train] Using GPU: NVIDIA GeForce RTX 2060 (6.0 GB)
+2026-06-11 15:26:58 [INFO] [taciturn.train] Resuming training...
+2026-06-11 15:26:58 [INFO] [taciturn.checkpoint] Loaded model ← checkpoints/best_model.pt
+2026-06-11 15:26:59 [INFO] [taciturn.replay_buffer] Buffer loaded ← data\replay_buffer.pkl (9,409 examples)
+2026-06-11 15:26:59 [INFO] [taciturn.train] ============================================================
+2026-06-11 15:26:59 [INFO] [taciturn.train]   Taciturn Chess Engine — Self-Play Training (PyTorch)
+2026-06-11 15:26:59 [INFO] [taciturn.train] ============================================================
+2026-06-11 15:26:59 [INFO] [taciturn.train] 
+==================================================
+  ITERATION 2
+==================================================
+2026-06-11 15:26:59 [INFO] [taciturn.train] [1/4] Generating 25 self-play games...
+2026-06-11 15:26:59 [INFO] [taciturn.self_play] Starting self-play: 25 games, 100 sims/move
+2026-06-11 15:26:59 [INFO] [taciturn.self_play] PGNs will be saved to: C:\Users\rnbri\Downloads\taciturn_chess_pytorch\taciturn_chess_pytorch\games/iter_0002.pgn
+2026-06-11 20:19:56 [INFO] [taciturn.self_play] Self-play complete: 9676 examples | W=0 D=25 L=0
+2026-06-11 20:19:56 [INFO] [taciturn.replay_buffer] Buffer size: 19,085 / 500,000
+2026-06-11 20:19:56 [INFO] [taciturn.train] [2/4] Training new model...
+2026-06-11 20:19:56 [INFO] [taciturn.trainer] Learning rate: 0.001000
+2026-06-11 20:19:58 [INFO] [taciturn.trainer] Training: 5 epochs × 74 steps | buffer=19,085
+2026-06-11 20:20:02 [INFO] [taciturn.trainer]   Epoch 1/5 | avg_loss=8.4634
+2026-06-11 20:20:06 [INFO] [taciturn.trainer]   Epoch 2/5 | avg_loss=8.2702
+2026-06-11 20:20:10 [INFO] [taciturn.trainer]   Epoch 3/5 | avg_loss=8.0861
+2026-06-11 20:20:14 [INFO] [taciturn.trainer]   Epoch 4/5 | avg_loss=7.9022
+2026-06-11 20:20:18 [INFO] [taciturn.trainer]   Epoch 5/5 | avg_loss=7.7348
+2026-06-11 20:20:18 [INFO] [taciturn.trainer] Training done | total=8.0914 policy=8.0883 value=0.0031
+2026-06-11 20:20:18 [INFO] [taciturn.train] [3/4] Evaluating new model vs best model...
+2026-06-11 20:20:18 [INFO] [taciturn.evaluator] Evaluation: 40 games (20 each color)
+2026-06-11 21:02:44 [INFO] [taciturn.evaluator] Evaluation: new=0 draw=40 best=0 | win_rate=50.0% | ✗ rejected
+2026-06-11 21:02:44 [INFO] [taciturn.train] [4/4] ✗ New model rejected (win rate: 50.0%)
+2026-06-11 21:02:45 [INFO] [taciturn.checkpoint] Saved model → checkpoints\model_iter_0002.pt
+2026-06-11 21:02:46 [INFO] [taciturn.replay_buffer] Buffer saved → data\replay_buffer.pkl (19,085 examples)
+2026-06-11 21:02:47 [INFO] [taciturn.train] Training curve → logs\training_curve.png
+2026-06-11 21:02:47 [INFO] [taciturn.train] Iteration 2 complete.
+2026-06-11 21:02:47 [INFO] [taciturn.train] 
+==================================================
+  ITERATION 3
+==================================================
+2026-06-11 21:02:47 [INFO] [taciturn.train] [1/4] Generating 25 self-play games...
+2026-06-11 21:02:47 [INFO] [taciturn.self_play] Starting self-play: 25 games, 100 sims/move
+2026-06-11 21:02:47 [INFO] [taciturn.self_play] PGNs will be saved to: C:\Users\rnbri\Downloads\taciturn_chess_pytorch\taciturn_chess_pytorch\games/iter_0003.pgn
