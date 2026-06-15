@@ -1,0 +1,11 @@
+data/
+checkpoints/
+logs/
+games/
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pt
+*.pkl
+Thumbs.db
